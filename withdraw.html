@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<style>
+p.round {
+  border: 2px solid grey;
+  border-radius: 8px;
+  padding: 5px;
+}
+input[type=text],[type=tel], select {
+  width: 100%;
+  padding: 12px 18px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+button{ 
+width: 30%;
+  padding: 12px 15px;
+border-radius: 12px;
+}
+</style>
+<body>
+
+<h2>Make A Transaction - Withdraw</h2>
+
+<form action="withdraw.php" method = "POST">
+<p class="round">
+  <label for="accountid"><b>Account Number</b></label>
+      <input type="text" placeholder="Enter Account Number" name="accountid" required> <br> <br> 
+      <label for="amount"><b>Amount</b></label>
+        <input type="text" placeholder="Enter Account Number" name="amount" required> <br> <br> 
+      
+      <div class="clearfix">
+        <button type="button" onclick="window.location.href='index.html'" class="cancelbtn"><b> Cancel </b> </button>
+        <button type="submit" name = "submit" class="signupbtn"><b> Submit </b> </button>
+      </div>
+</div>
+</p>
+</form> 
+</body>
+</html>

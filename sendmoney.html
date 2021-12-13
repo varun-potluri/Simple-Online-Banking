@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<style>
+p.round {
+  border: 2px solid grey;
+  border-radius: 8px;
+  padding: 5px;
+}
+input[type=text],[type=tel], select {
+  width: 100%;
+  padding: 12px 18px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+button{ 
+width: 30%;
+  padding: 12px 15px;
+border-radius: 12px;
+}
+</style>
+<h2> Make A Transaction - Send Money </h2>
+<form  action="sendmoney.php" method = "POST">
+<p class="round">
+<label for="ano">Account Number</label>
+<input type="text" id="ano" name="ano"> <br> <br>
+<label for="amount">Amount </label>
+<input type="text" id="amount" name="amount"> <br> <br>
+<label for="anop">Acount Number to Credit </label>
+<input type="text" id="anop" name="anop"> <br> <br>
+<div class="clearfix">
+        <button type="button" onclick="window.location.href='index.html'" class="cancelbtn"><b> Cancel </b> </button>
+        <button type="submit" name="submit" class="signupbtn"><b> Send </b> </button>
+      </div>
+</p>
+</form>
+</html>
